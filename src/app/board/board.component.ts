@@ -281,10 +281,8 @@ flip(ev) {
     }
     if ( source.id == "Maneuver7"){
       if (destination == "Maneuver2") {
-        for (var i = 0; i < source.length; i++){
         this.Maneuver2.push(this.Maneuver7.pop());
         this.FromManeuver.style.display = "none";
-      }
       }
       if (destination == "Maneuver3") {
         this.Maneuver3.push(this.Maneuver7.pop());
