@@ -1,0 +1,101 @@
+
+<div>
+  <div class="talon" (click)="drawTalon()">
+    Talon has {{ Talon.length }} cards
+    {{ test }}
+    {{ FromManeuver }}
+    {{ ToManeuver }}
+   <!-- <ul  *ngFor="let card of Talon">
+            <span class="card">{{card.suite}}-{{card.rank}} </span>
+        </ul>-->
+    <ul *ngIf="!Talon.length"> Reload talon </ul>
+</div>
+  
+  <div class="wastePile" (click)="chooseMove()">
+      Waste Pile
+        <ul *ngIf="WastePile.length">
+            <span class="card"  >{{WastePile[WastePile.length-1].suite}}-{{WastePile[WastePile.length-1].rank}} </span>
+            <span class="card"  >{{WastePile[WastePile.length-2].suite}}-{{WastePile[WastePile.length-2].rank}} </span>
+            <span class="card"  >{{WastePile[WastePile.length-3].suite}}-{{WastePile[WastePile.length-3].rank}} </span>
+         </ul>
+      
+     
+    </div>
+  <div >
+    <div class="foundation" (click)="chooseMove()">
+      foundation4
+    </div>
+    <div class="foundation" (click)="chooseMove()">
+      foundation3
+    </div>
+    <div class="foundation" (click)="chooseMove()">
+      foundation2
+    </div>
+    <div class="foundation" (click)="chooseMove()">
+      foundation1
+    </div>
+
+  </div>
+</div>
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br>
+
+<div class="maneuver" (drop)="drop($event)" (dragover)="allowDrop($event)">
+    Maneuver1
+    <ul  *ngFor="let card of Maneuver1" >
+        <span id="A" class="card" *ngIf="!card.face" (click)="flip($event)">X-X</span>
+        <span id="Maneuver1" class="card" *ngIf="card.face"
+        draggable="true" (dragstart)="drag($event)">{{card.suite}}-{{card.rank}}</span>
+</ul>
+</div>
+
+<div class="maneuver" (drop)="drop($event)" (dragover)="allowDrop($event)">
+    Maneuver2
+    <ul  *ngFor="let card of Maneuver2"  >
+        <span id="B" class="card" *ngIf="!card.face" (click)="flip($event)">X-X</span>
+        <span id="Maneuver2" class="card" *ngIf="card.face"
+        draggable="true" (dragstart)="drag($event)">{{card.suite}}-{{card.rank}} </span>
+    </ul>
+</div>
+<div class="maneuver" (drop)="drop($event)" (dragover)="allowDrop($event)">
+    Maneuver3
+    <ul  *ngFor="let card of Maneuver3"  >
+        <span id="C" class="card" *ngIf="!card.face" (click)="flip($event)">X-X</span>
+        <span id="Maneuver3" class="card" *ngIf="card.face"
+        draggable="true" (dragstart)="drag($event)">{{card.suite}}-{{card.rank}} </span>
+    </ul>
+</div>
+
+<div class="maneuver" (drop)="drop($event)" (dragover)="allowDrop($event)">
+    Maneuver4
+    <ul  *ngFor="let card of Maneuver4"  >
+        <span id="D" class="card" *ngIf="!card.face" (click)="flip($event)">X-X</span>
+        <span id="Maneuver4" class="card" *ngIf="card.face"
+        draggable="true" (dragstart)="drag($event)">{{card.suite}}-{{card.rank}} </span>
+    </ul>
+</div>
+<div class="maneuver" (drop)="drop($event)" (dragover)="allowDrop($event)">
+    Maneuver5
+    <ul  *ngFor="let card of Maneuver5"  >
+        <span id="E" class="card" *ngIf="!card.face" (click)="flip($event)">X-X</span>
+        <span id="Maneuver5" class="card" *ngIf="card.face"
+        draggable="true" (dragstart)="drag($event)">{{card.suite}}-{{card.rank}} </span>
+    </ul>
+</div>
+<div class="maneuver" (drop)="drop($event)" (dragover)="allowDrop($event)">
+    Maneuver6
+    <ul  *ngFor="let card of Maneuver6"  >
+        <span id="F" class="card" *ngIf="!card.face" (click)="flip($event)">X-X</span>
+        <span id="Maneuver6" class="card" *ngIf="card.face"
+        draggable="true" (dragstart)="drag($event)">{{card.suite}}-{{card.rank}} </span>
+    </ul>
+</div>
+<div class="maneuver" (drop)="drop($event)" (dragover)="allowDrop($event)">
+    Maneuver7
+    <ul  *ngFor="let card of Maneuver7"  >
+        <span id="G" class="card" *ngIf="!card.face" (click)="flip($event)">X-X</span>
+        <span id="Maneuver7" class="card" *ngIf="card.face"
+        draggable="true" (dragstart)="drag($event)">{{card.suite}}-{{card.rank}} </span>
+    </ul>
+</div>
