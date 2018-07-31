@@ -93,28 +93,23 @@ flip(ev) {
     if (!this.Maneuver2[this.Maneuver2.length - 1].face) {
       this.Maneuver2[this.Maneuver2.length - 1].face = true;
     }
-  } 
-  if (this.FlipManeuver == "C") {
+  } else if (this.FlipManeuver == "C") {
     if (!this.Maneuver3[this.Maneuver3.length - 1].face) {
       this.Maneuver3[this.Maneuver3.length - 1].face = true;
     }
-  }
-  if (this.FlipManeuver == "D") {
+  } else if (this.FlipManeuver == "D") {
     if (!this.Maneuver4[this.Maneuver4.length - 1].face) {
       this.Maneuver4[this.Maneuver4.length - 1].face = true;
     }
-  }
-  if (this.FlipManeuver == "E") {
+  } else if (this.FlipManeuver == "E") {
     if (!this.Maneuver5[this.Maneuver5.length - 1].face) {
       this.Maneuver5[this.Maneuver5.length - 1].face = true;
     }
-  }
-  if (this.FlipManeuver == "F") {
+  } else if (this.FlipManeuver == "F") {
     if (!this.Maneuver6[this.Maneuver6.length - 1].face) {
       this.Maneuver6[this.Maneuver6.length - 1].face = true;
     }
-  }
-  if (this.FlipManeuver == "G") {
+  } else if (this.FlipManeuver == "G") {
     if (!this.Maneuver7[this.Maneuver7.length - 1].face) {
       this.Maneuver7[this.Maneuver7.length - 1].face = true;
     }
@@ -148,8 +143,7 @@ flip(ev) {
         this.Maneuver7.push(this.Maneuver1.pop());
         this.FromManeuver.style.display = "none";
       }
-    }
-    if ( source.id == "Maneuver2"){
+    } else if ( source.id == "Maneuver2"){
       if (destination == "Maneuver1") {
         this.Maneuver1.push(this.Maneuver2.pop());
         this.FromManeuver.style.display = "none";
@@ -174,8 +168,7 @@ flip(ev) {
         this.Maneuver7.push(this.Maneuver2.pop());
         this.FromManeuver.style.display = "none";
       }
-    }
-    if ( source.id == "Maneuver3"){
+    } else if ( source.id == "Maneuver3"){
       if (destination == "Maneuver2") {
         this.Maneuver2.push(this.Maneuver3.pop());
         this.FromManeuver.style.display = "none";
@@ -200,8 +193,7 @@ flip(ev) {
         this.Maneuver7.push(this.Maneuver3.pop());
         this.FromManeuver.style.display = "none";
       }
-    }
-    if ( source.id == "Maneuver4"){
+    } else if ( source.id == "Maneuver4"){
       if (destination == "Maneuver2") {
         this.Maneuver2.push(this.Maneuver4.pop());
         this.FromManeuver.style.display = "none";
@@ -226,8 +218,7 @@ flip(ev) {
         this.Maneuver7.push(this.Maneuver4.pop());
         this.FromManeuver.style.display = "none";
       }
-    }
-    if ( source.id == "Maneuver5"){
+    } else if ( source.id == "Maneuver5"){
       if (destination == "Maneuver2") {
         this.Maneuver2.push(this.Maneuver5.pop());
         this.FromManeuver.style.display = "none";
@@ -252,8 +243,7 @@ flip(ev) {
         this.Maneuver7.push(this.Maneuver5.pop());
         this.FromManeuver.style.display = "none";
       }
-    }
-    if ( source.id == "Maneuver6"){
+    } else if ( source.id == "Maneuver6"){
       if (destination == "Maneuver2") {
         this.Maneuver2.push(this.Maneuver6.pop());
         this.FromManeuver.style.display = "none";
@@ -278,8 +268,7 @@ flip(ev) {
         this.Maneuver7.push(this.Maneuver6.pop());
         this.FromManeuver.style.display = "none";
       }
-    }
-    if ( source.id == "Maneuver7"){
+    } else if ( source.id == "Maneuver7"){
       if (destination == "Maneuver2") {
         this.Maneuver2.push(this.Maneuver7.pop());
         this.FromManeuver.style.display = "none";
